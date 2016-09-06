@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Game of Thrones Quiz</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+        <link rel="stylesheet/less" type="text/css" href="less/css-less-reset.less" />
+        <link rel="stylesheet/less" type="text/css" href="less/shared.less" />
+        <link rel="stylesheet/less" type="text/css" href="less/quiz.less" />
+        <link rel="stylesheet/less" type="text/css" href="less/result.less" />
+
+        <script src="js/libraries/less.min.js"></script>
+    </head>
+
+    <body>
+    	<div class="container">
+
+				<!-- QUIZ PART -->
+	    	<div class="quiz col-lg-8 col-lg-offset-2" >
+	    		<header class="row">
+	    			<h1 class="quiz__title"></h1>
+	    			<p class="quiz__description"></p>
+	    		</header>
+					<div class="quiz__body row">
+						<div class="quiz__q-img-wrapper col-xs-12 col-md-6">
+							<img class="quiz__q-img" src="" alt="quiz image"/>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<p class="quiz__question-wrapper">
+								<span class="quiz__q-id"></span>/<span class="quiz__q-total-num"></span><span class="quiz__question"></span>
+							</p>
+							<p class="quiz__answer-not-provided">Please provide some answer</p>
+							<div class="quiz__q-answers-wrapper">
+								<ul class="quiz__q-answers">								
+								</ul>
+							</div>
+						</div>
+						<button class="quiz__next-question-btn btn" type="">
+							NEXT QUESTION 
+							<span class="quiz__small-sword"></span>
+							<span class="quiz__cost-of-arms"></span>
+						</button>
+					</div>
+	    	</div>
+
+				<!-- RESULT PART -->
+	    	<div class="result col-xs-12 col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-3 ">
+	    		<h2 class="result__score"><span class="result__percentage"></span>/100</h2>
+	    		<img class="result__img" src="" alt="result image">
+					<h3 class="result__title"></h3>
+					<p class="result__msg"></p>
+	    	</div>
+
+    	</div>
+
+			<script src="js/libraries/lodash.min.js"></script>
+			<script src="js/libraries/jquery-1.11.3.min.js"></script>
+			<script src="js/ajax-calls.js"></script>
+			<script src="js/application.js"></script>
+
+    </body>
+
+</html>
